@@ -1,0 +1,26 @@
+html {
+  font-size: 62.5%;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #1f305e;
+  color: #ebeef8;
+}
+
+.app {
+  display: flex;
+  padding: 1.6rem;
+}
+
+.input-section {
+  flex: 1;
+  padding: 2rem;
+  outline: 1px solid #ebeef8;
+}
+
+.preview-section {
+  flex: 2;
+  padding: 2rem;
+  outline: 1px solid #ebeef8;
+}

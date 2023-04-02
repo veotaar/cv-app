@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import GeneralForm from './components/GeneralForm';
+import GeneralPreview from './components/GeneralPreview';
 import './App.css';
 
 class App extends Component {
@@ -32,9 +33,11 @@ class App extends Component {
     return (
       <div className="app">
         <section className="input-section">
-          <GeneralForm updateGeneral={this.updateGeneral} generalState={general} />
+          <GeneralForm updateGeneral={this.updateGeneral} general={general} />
         </section>
-        <section className="preview-section">preview</section>
+        <section className="preview-section">
+          <GeneralPreview general={general} />
+        </section>
       </div>
     );
   }

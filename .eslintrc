@@ -3,6 +3,8 @@
   "rules": {
     "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
     "no-console": 2,
+    "react/no-unused-state": 0, // temporary
+    "react/prop-types": 0, // temporary
     "prettier/prettier": [
       "error",
       {

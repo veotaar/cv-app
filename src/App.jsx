@@ -46,6 +46,8 @@ class App extends Component {
     this.updateWork = this.updateWork.bind(this);
     this.addWorkEntry = this.addWorkEntry.bind(this);
     this.deleteWorkEntry = this.deleteWorkEntry.bind(this);
+    this.clearState = this.clearState.bind(this);
+    this.loadExample = this.loadExample.bind(this);
   }
 
   updateGeneral(target) {
@@ -143,6 +145,94 @@ class App extends Component {
     );
   }
 
+  clearState() {
+    this.setState({
+      general: {
+        name: '',
+        email: '',
+        phone: '',
+      },
+      education: [
+        {
+          key: uuidv4(),
+          schoolName: '',
+          degreeType: '',
+          startDate: '',
+          endDate: '',
+        },
+      ],
+      work: [
+        {
+          key: uuidv4(),
+          companyName: '',
+          position: '',
+          tasks: '',
+          startDate: '',
+          endDate: '',
+        },
+      ],
+    });
+  }
+
+  loadExample() {
+    this.setState({
+      general: {
+        name: 'Jane Doe',
+        email: 'jane.doe@example.com',
+        phone: '+123456789',
+      },
+      education: [
+        {
+          key: uuidv4(),
+          schoolName: 'University of Example',
+          degreeType: 'PhD',
+          startDate: 'fall 2019',
+          endDate: 'spring 2023',
+        },
+        {
+          key: uuidv4(),
+          schoolName: 'Example University',
+          degreeType: 'MSc',
+          startDate: 'spring 2017',
+          endDate: 'fall 2019',
+        },
+        {
+          key: uuidv4(),
+          schoolName: 'Example University',
+          degreeType: 'BSc',
+          startDate: 'fall 2013',
+          endDate: 'fall 2017',
+        },
+      ],
+      work: [
+        {
+          key: uuidv4(),
+          companyName: 'Good Engineering',
+          position: 'Software Engineer',
+          tasks: 'Software Engineering stuff',
+          startDate: '01.2023',
+          endDate: '-',
+        },
+        {
+          key: uuidv4(),
+          companyName: 'Nice LLC',
+          position: 'Software Developer',
+          tasks: 'Developing things',
+          startDate: '01.2020',
+          endDate: '01.2023',
+        },
+        {
+          key: uuidv4(),
+          companyName: 'Best Studios',
+          position: 'UI/UX Engineer',
+          tasks: 'UI stuff',
+          startDate: '01.2018',
+          endDate: '01.2020',
+        },
+      ],
+    });
+  }
+
   render() {
     const { general, education, work } = this.state;
 
@@ -162,6 +252,12 @@ class App extends Component {
             addWorkEntry={this.addWorkEntry}
             deleteWorkEntry={this.deleteWorkEntry}
           />
+          <button type="button" onClick={this.clearState}>
+            CLEAR
+          </button>
+          <button type="button" onClick={this.loadExample}>
+            LOAD EXAMPLE
+          </button>
         </section>
         <section className="preview-section">
           <GeneralPreview general={general} />

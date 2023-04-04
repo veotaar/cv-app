@@ -3,7 +3,9 @@ import { v4 as uuidv4 } from 'uuid';
 import GeneralForm from './components/GeneralForm';
 import GeneralPreview from './components/GeneralPreview';
 import EducationForm from './components/EducationForm';
+import EducationPreview from './components/EducationPreview';
 import WorkForm from './components/WorkForm';
+import WorkPreview from './components/WorkPreview';
 import './App.css';
 
 class App extends Component {
@@ -163,6 +165,8 @@ class App extends Component {
         </section>
         <section className="preview-section">
           <GeneralPreview general={general} />
+          <EducationPreview education={education} />
+          <WorkPreview work={work} />
         </section>
       </div>
     );

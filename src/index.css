@@ -1,3 +1,6 @@
+@import 'open-props/normalize';
+@import 'open-props/style';
+
 *,
 *::before,
 *::after {

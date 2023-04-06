@@ -252,10 +252,10 @@ class App extends Component {
             addWorkEntry={this.addWorkEntry}
             deleteWorkEntry={this.deleteWorkEntry}
           />
-          <button type="button" onClick={this.clearState}>
+          <button className="button" type="button" onClick={this.clearState}>
             CLEAR
           </button>
-          <button type="button" onClick={this.loadExample}>
+          <button className="button" type="button" onClick={this.loadExample}>
             LOAD EXAMPLE
           </button>
         </section>

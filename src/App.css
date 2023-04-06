@@ -1,27 +1,65 @@
 html {
-  font-size: 62.5%;
-  font-family: sans-serif;
-}
-
-body {
-  background-color: #1f305e;
-  color: #ebeef8;
+  font-family: var(--font-sans);
 }
 
 .app {
   display: flex;
-  padding: 1.6rem;
+  background-color: var(--gray-1);
   min-height: 100vh;
 }
 
 .input-section {
   flex: 1;
-  padding: 2rem;
+  padding: var(--size-3);
   outline: 1px solid #ebeef8;
 }
 
 .preview-section {
   flex: 2;
-  padding: 2rem;
+  padding: var(--size-3);
   outline: 1px solid #ebeef8;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--font-size-1);
+  gap: var(--size-2);
+  margin-block-end: var(--size-4);
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.form input {
+  border-radius: var(--radius-2);
+  border: var(--border-size-1) solid var(--gray-3);
+  background-color: var(--gray-2);
+  padding: var(--size-1);
+}
+
+.button {
+  font-size: var(--font-size-2);
+  padding-inline: var(--size-5);
+  padding-block: var(--size-2);
+}
+
+.form-container {
+  box-shadow: var(--shadow-2);
+  border: var(--border-size-1) solid var(--gray-3);
+  border-radius: var(--radius-3);
+  margin-block-end: var(--size-8);
+  padding: var(--size-3);
+}
+
+.form:not(:first-child) {
+  border-top: var(--border-size-1) solid var(--gray-5);
+  margin-block-start: var(--size-6);
+}
+
+.form-title {
+  font-size: var(--font-size-2);
+  margin-block-end: var(--size-2);
 }

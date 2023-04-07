@@ -81,7 +81,7 @@ class EducationForm extends Component {
           ))}
         </div>
         <button className="button button-add" type="button" onClick={this.handleAdd}>
-          ADD Education
+          + Add More
         </button>
       </div>
     );

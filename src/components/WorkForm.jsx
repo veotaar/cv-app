@@ -85,7 +85,7 @@ class WorkForm extends Component {
           ))}
         </div>
         <button className="button button-add" type="button" onClick={this.handleAdd}>
-          ADD Work
+          + Add More
         </button>
       </div>
     );

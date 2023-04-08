@@ -15,6 +15,7 @@ class App extends Component {
     this.state = {
       general: {
         name: '',
+        title: '',
         email: '',
         phone: '',
       },
@@ -149,6 +150,7 @@ class App extends Component {
     this.setState({
       general: {
         name: '',
+        title: '',
         email: '',
         phone: '',
       },
@@ -178,6 +180,7 @@ class App extends Component {
     this.setState({
       general: {
         name: 'Jane Doe',
+        title: 'Full-stack developer',
         email: 'jane.doe@example.com',
         phone: '+123456789',
       },

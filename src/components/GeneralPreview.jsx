@@ -6,6 +6,7 @@ class GeneralPreview extends Component {
     return (
       <div className="general-info-cv">
         <h1 className="general-info-name">{general.name}</h1>
+        <h2 className="general-info-title">{general.title}</h2>
 
         <div className="general-info-contact">
           <p>{general.email}</p>

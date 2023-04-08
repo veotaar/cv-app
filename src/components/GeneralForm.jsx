@@ -25,6 +25,10 @@ class GeneralForm extends Component {
               <input type="text" id="name" name="name" value={general.name} onChange={this.handleChange} />
             </div>
             <div className="form-section">
+              <label htmlFor="title">Title</label>
+              <input type="text" id="title" name="title" value={general.title} onChange={this.handleChange} />
+            </div>
+            <div className="form-section">
               <label htmlFor="email">e-mail</label>
               <input type="email" id="email" name="email" value={general.email} onChange={this.handleChange} />
             </div>

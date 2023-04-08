@@ -55,6 +55,16 @@ class EducationForm extends Component {
                 />
               </div>
               <div className="form-section">
+                <label htmlFor={`field-${item.key}`}>Field</label>
+                <input
+                  type="text"
+                  id={`field-${item.key}`}
+                  name="field"
+                  value={item.field}
+                  onChange={this.handleChange}
+                />
+              </div>
+              <div className="form-section">
                 <label htmlFor={`startDate-${item.key}`}>Start</label>
                 <input
                   type="text"

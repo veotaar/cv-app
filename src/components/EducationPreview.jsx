@@ -9,6 +9,7 @@ class EducationPreview extends Component {
           <div key={item.key}>
             <p>{item.schoolName}</p>
             <p>{item.degreeType}</p>
+            <p>{item.field}</p>
             <p>{item.startDate}</p>
             <p>{item.endDate}</p>
           </div>

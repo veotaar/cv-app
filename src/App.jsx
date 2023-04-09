@@ -244,6 +244,14 @@ class App extends Component {
     return (
       <div className="app">
         <section className="input-section">
+          <div className="control-buttons">
+            <button className="button" type="button" onClick={this.clearState}>
+              CLEAR
+            </button>
+            <button className="button" type="button" onClick={this.loadExample}>
+              LOAD EXAMPLE
+            </button>
+          </div>
           <GeneralForm updateGeneral={this.updateGeneral} general={general} />
           <WorkForm
             work={work}
@@ -257,13 +265,6 @@ class App extends Component {
             addEducationEntry={this.addEducationEntry}
             deleteEducationEntry={this.deleteEducationEntry}
           />
-
-          <button className="button" type="button" onClick={this.clearState}>
-            CLEAR
-          </button>
-          <button className="button" type="button" onClick={this.loadExample}>
-            LOAD EXAMPLE
-          </button>
         </section>
         <section className="preview-section">
           <GeneralPreview general={general} />

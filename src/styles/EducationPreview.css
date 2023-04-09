@@ -1,28 +1,28 @@
-.work-title {
+.education-title {
   font-weight: var(--font-weight-5);
   font-size: var(--font-size-3);
 }
 
-.company-container {
+.education-container {
   margin-block: var(--size-2);
 }
 
-.company-details {
+.education-details {
   display: flex;
   justify-content: space-between;
 }
 
-.company-name {
+.education-name {
   font-size: var(--font-size-2);
   font-weight: var(--font-weight-6);
 }
 
-.company-dates {
+.education-dates {
   font-style: italic;
   font-size: var(--font-size-1);
   font-weight: var(--font-weight-3);
 }
 
-.company-position {
+.education-field {
   font-style: italic;
 }

@@ -191,27 +191,19 @@ class App extends Component {
       education: [
         {
           key: uuidv4(),
-          schoolName: 'University of Example',
-          degreeType: 'PhD',
-          field: 'field1',
-          startDate: 'fall 2019',
-          endDate: 'spring 2023',
-        },
-        {
-          key: uuidv4(),
-          schoolName: 'Example University',
+          schoolName: 'Massachusetts Institute of Technology (MIT)',
           degreeType: 'MSc',
-          field: 'field2',
-          startDate: 'spring 2017',
-          endDate: 'fall 2019',
+          field: 'Computer Science',
+          startDate: '2019',
+          endDate: '2023',
         },
         {
           key: uuidv4(),
-          schoolName: 'Example University',
+          schoolName: 'University of California, Berkeley',
           degreeType: 'BSc',
-          field: 'field3',
-          startDate: 'fall 2013',
-          endDate: 'fall 2017',
+          field: 'Computer Science',
+          startDate: '2015',
+          endDate: '2019',
         },
       ],
       work: [
@@ -230,7 +222,7 @@ class App extends Component {
           position: 'Full-Stack Developer',
           tasks:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Phasellus eget velit sed magna vehicula placerat. Sed blandit tristique sapien, a consectetur arcu lacinia eget.',
-          startDate: '01.2020',
+          startDate: '01.2021',
           endDate: '01.2023',
         },
         {
@@ -239,8 +231,8 @@ class App extends Component {
           position: 'Machine Learning Engineer',
           tasks:
             'In hac habitasse platea dictumst. Pellentesque fermentum quam vel velit blandit, eu ullamcorper dolor consectetur. Fusce eget turpis nec eros bibendum sagittis. Sed non purus non sapien congue maximus.',
-          startDate: '01.2018',
-          endDate: '01.2020',
+          startDate: '10.2019',
+          endDate: '01.2021',
         },
       ],
     });

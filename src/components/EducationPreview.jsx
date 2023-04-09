@@ -1,17 +1,25 @@
 import React, { Component } from 'react';
+import '../styles/EducationPreview.css';
 
 class EducationPreview extends Component {
   render() {
     const { education } = this.props;
     return (
       <div className="education-cv">
-        {education.map((item) => (
-          <div key={item.key}>
-            <p>{item.schoolName}</p>
-            <p>{item.degreeType}</p>
-            <p>{item.field}</p>
-            <p>{item.startDate}</p>
-            <p>{item.endDate}</p>
+        <h2 className="education-title">Education</h2>
+        <hr />
+        {education.map(({ key, schoolName, degreeType, field, startDate, endDate }) => (
+          <div className="education-container" key={key}>
+            <div className="education-details">
+              <p className="education-name">{schoolName}</p>
+              <p className="education-dates">
+                {startDate} - {endDate}
+              </p>
+            </div>
+
+            <p className="education-field">
+              {degreeType}, {field}
+            </p>
           </div>
         ))}
       </div>

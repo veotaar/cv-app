@@ -17,7 +17,7 @@ class GeneralForm extends Component {
 
     return (
       <div className="form-container">
-        <h2 className="form-title">Contact Info</h2>
+        <h2 className="form-title">General Info</h2>
         <div>
           <form className="form">
             <div className="form-section">

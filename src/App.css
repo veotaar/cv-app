@@ -14,6 +14,14 @@ body {
   margin-inline: auto;
 }
 
+.app-title {
+  padding-inline: var(--size-1);
+  font-weight: var(--font-weight-6);
+  font-size: var(--font-size-5);
+  margin-bottom: var(--size-4);
+  color: var(--cyan-9);
+}
+
 .input-section {
   padding: var(--size-4);
   /* outline: 1px solid #ebeef8; */

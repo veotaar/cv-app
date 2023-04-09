@@ -257,6 +257,7 @@ class App extends Component {
     return (
       <div className="app">
         <section className="input-section">
+          <h2 className="app-title">CV Creator</h2>
           <div className="control-buttons">
             <button className="button" type="button" onClick={this.clearState}>
               CLEAR

@@ -7,7 +7,7 @@ class EducationPreview extends Component {
     return (
       <div className="education-cv">
         <h2 className="education-title">Education</h2>
-        <hr />
+        {/* <hr /> */}
         {education.map(({ key, schoolName, degreeType, field, startDate, endDate }) => (
           <div className="education-container" key={key}>
             <div className="education-details">

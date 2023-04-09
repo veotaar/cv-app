@@ -3,6 +3,7 @@ import { v4 as uuidv4 } from 'uuid';
 import GeneralForm from './components/GeneralForm';
 import GeneralPreview from './components/GeneralPreview';
 import SummaryForm from './components/SummaryForm';
+import SummaryPreview from './components/SummaryPreview';
 import EducationForm from './components/EducationForm';
 import EducationPreview from './components/EducationPreview';
 import WorkForm from './components/WorkForm';
@@ -194,7 +195,7 @@ class App extends Component {
     this.setState({
       general: {
         name: 'Jane Doe',
-        title: 'Full-stack developer',
+        title: 'Software Engineer',
         email: 'jane.doe@example.com',
         phone: '+123456789',
       },
@@ -281,6 +282,7 @@ class App extends Component {
         </section>
         <section className="preview-section">
           <GeneralPreview general={general} />
+          <SummaryPreview summary={summary} />
           <WorkPreview work={work} />
           <EducationPreview education={education} />
         </section>

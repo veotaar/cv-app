@@ -1,0 +1,15 @@
+.summary-cv {
+  margin-block: var(--size-4);
+}
+.summary-title {
+  font-weight: var(--font-weight-5);
+  font-size: var(--font-size-3);
+}
+
+.summary-container {
+  margin-block: var(--size-2);
+}
+
+.summary-container p {
+  max-inline-size: none;
+}

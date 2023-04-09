@@ -7,7 +7,7 @@ class WorkPreview extends Component {
     return (
       <div className="work-cv">
         <h2 className="work-title">Work Experience</h2>
-        <hr />
+        {/* <hr /> */}
         {work.map(({ key, companyName, position, tasks, startDate, endDate }) => (
           <div className="company-container" key={key}>
             <div className="company-details">

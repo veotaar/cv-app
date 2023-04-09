@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import GeneralForm from './components/GeneralForm';
 import GeneralPreview from './components/GeneralPreview';
+import SummaryForm from './components/SummaryForm';
 import EducationForm from './components/EducationForm';
 import EducationPreview from './components/EducationPreview';
 import WorkForm from './components/WorkForm';
@@ -19,6 +20,7 @@ class App extends Component {
         email: '',
         phone: '',
       },
+      summary: '',
       education: [
         {
           key: uuidv4(),
@@ -42,6 +44,7 @@ class App extends Component {
     };
 
     this.updateGeneral = this.updateGeneral.bind(this);
+    this.updateSummary = this.updateSummary.bind(this);
     this.updateEducation = this.updateEducation.bind(this);
     this.addEducationEntry = this.addEducationEntry.bind(this);
     this.deleteEducationEntry = this.deleteEducationEntry.bind(this);
@@ -59,6 +62,12 @@ class App extends Component {
         [target.name]: target.value,
       },
     }));
+  }
+
+  updateSummary(target) {
+    this.setState({
+      summary: target.value,
+    });
   }
 
   updateEducation(target) {
@@ -157,6 +166,7 @@ class App extends Component {
         email: '',
         phone: '',
       },
+      summary: '',
       education: [
         {
           key: uuidv4(),
@@ -188,6 +198,8 @@ class App extends Component {
         email: 'jane.doe@example.com',
         phone: '+123456789',
       },
+      summary:
+        'As a highly skilled software engineer with over 5 years of experience, I am proficient in multiple programming languages and have a deep understanding of software development life cycle. I have a strong track record of delivering high-quality software projects on time and within budget, and I am adept at collaborating with cross-functional teams. My technical skills include expertise in front-end development, back-end development, and database design. Additionally, I have experience with cloud computing and have worked extensively with AWS and Azure. My passion for technology, attention to detail, and problem-solving abilities make me an asset to any software development team.',
       education: [
         {
           key: uuidv4(),
@@ -239,7 +251,7 @@ class App extends Component {
   }
 
   render() {
-    const { general, education, work } = this.state;
+    const { general, summary, education, work } = this.state;
 
     return (
       <div className="app">
@@ -253,6 +265,7 @@ class App extends Component {
             </button>
           </div>
           <GeneralForm updateGeneral={this.updateGeneral} general={general} />
+          <SummaryForm updateSummary={this.updateSummary} summary={summary} />
           <WorkForm
             work={work}
             updateWork={this.updateWork}

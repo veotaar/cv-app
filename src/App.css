@@ -2,25 +2,64 @@ html {
   font-family: var(--font-sans);
 }
 
+body {
+  background-color: var(--gray-1);
+}
+
 .app {
   display: flex;
-  background-color: var(--gray-1);
   min-height: 100vh;
+  width: 85%;
+  margin-inline: auto;
 }
 
 .input-section {
-  flex: 1;
-  padding: var(--size-3);
+  padding: var(--size-4);
   outline: 1px solid #ebeef8;
   height: 100vh;
+  width: 32%;
   overflow: auto;
-  /* scroll-behavior: smooth; */
 }
 
 .preview-section {
-  flex: 2;
-  padding: var(--size-3);
-  outline: 1px solid #ebeef8;
+  /* flex: 2; */
+  padding: var(--size-4);
+  outline: 1px solid red;
+  width: 60%;
+  margin-block: var(--size-4);
+  margin-inline: auto;
+}
+
+@media only screen and (max-width: 1500px) {
+  .app {
+    width: 100%;
+  }
+
+  .preview-section {
+    width: 66%;
+  }
+}
+
+/* @media only screen and (max-width: 1250px) {
+  .preview-section {
+    width: 66%;
+  }
+} */
+
+@media only screen and (max-width: 950px) {
+  .app {
+    flex-direction: column;
+  }
+
+  .input-section {
+    height: fit-content;
+    width: 100%;
+    overflow: visible;
+  }
+
+  .preview-section {
+    width: 100%;
+  }
 }
 
 .form {

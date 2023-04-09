@@ -26,7 +26,8 @@ body {
   /* flex: 2; */
   background-color: #fff;
   box-shadow: var(--shadow-3);
-  padding: var(--size-4);
+  padding-block: var(--size-4);
+  padding-inline: var(--size-8);
   /* outline: 1px solid red; */
   width: 60%;
   margin-block: var(--size-4);

@@ -217,25 +217,28 @@ class App extends Component {
       work: [
         {
           key: uuidv4(),
-          companyName: 'Good Engineering',
-          position: 'Software Engineer',
-          tasks: 'Software Engineering stuff',
+          companyName: 'SynapseTech Solutions',
+          position: 'DevOps Engineer',
+          tasks:
+            'Cras sit amet massa vel turpis pretium dictum a et ante. Suspendisse potenti. Duis vel tellus sed tortor faucibus aliquet nec sit amet risus. Sed gravida nunc sed enim consequat, vel suscipit ipsum ullamcorper.',
           startDate: '01.2023',
-          endDate: '-',
+          endDate: 'present',
         },
         {
           key: uuidv4(),
-          companyName: 'Nice LLC',
-          position: 'Software Developer',
-          tasks: 'Developing things',
+          companyName: 'QuantumCode Technologies',
+          position: 'Full-Stack Developer',
+          tasks:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Phasellus eget velit sed magna vehicula placerat. Sed blandit tristique sapien, a consectetur arcu lacinia eget.',
           startDate: '01.2020',
           endDate: '01.2023',
         },
         {
           key: uuidv4(),
-          companyName: 'Best Studios',
-          position: 'UI/UX Engineer',
-          tasks: 'UI stuff',
+          companyName: 'NexaNova Labs',
+          position: 'Machine Learning Engineer',
+          tasks:
+            'In hac habitasse platea dictumst. Pellentesque fermentum quam vel velit blandit, eu ullamcorper dolor consectetur. Fusce eget turpis nec eros bibendum sagittis. Sed non purus non sapien congue maximus.',
           startDate: '01.2018',
           endDate: '01.2020',
         },
@@ -250,18 +253,19 @@ class App extends Component {
       <div className="app">
         <section className="input-section">
           <GeneralForm updateGeneral={this.updateGeneral} general={general} />
-          <EducationForm
-            education={education}
-            updateEducation={this.updateEducation}
-            addEducationEntry={this.addEducationEntry}
-            deleteEducationEntry={this.deleteEducationEntry}
-          />
           <WorkForm
             work={work}
             updateWork={this.updateWork}
             addWorkEntry={this.addWorkEntry}
             deleteWorkEntry={this.deleteWorkEntry}
           />
+          <EducationForm
+            education={education}
+            updateEducation={this.updateEducation}
+            addEducationEntry={this.addEducationEntry}
+            deleteEducationEntry={this.deleteEducationEntry}
+          />
+
           <button className="button" type="button" onClick={this.clearState}>
             CLEAR
           </button>
@@ -271,8 +275,8 @@ class App extends Component {
         </section>
         <section className="preview-section">
           <GeneralPreview general={general} />
-          <EducationPreview education={education} />
           <WorkPreview work={work} />
+          <EducationPreview education={education} />
         </section>
       </div>
     );

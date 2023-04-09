@@ -1,0 +1,27 @@
+.work-title {
+  font-size: var(--font-size-3);
+}
+
+.company-container {
+  margin-block: var(--size-2);
+}
+
+.company-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.company-name {
+  font-size: var(--font-size-2);
+  font-weight: var(--font-weight-6);
+}
+
+.company-dates {
+  font-style: italic;
+  font-size: var(--font-size-1);
+  font-weight: var(--font-weight-3);
+}
+
+.company-position {
+  font-style: italic;
+}
